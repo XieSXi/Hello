@@ -22,7 +22,7 @@ public class MyListActivity extends AppCompatActivity implements AdapterView.OnI
         setContentView(R.layout.activity_my_list);
 
         ListView listView=(ListView)findViewById(R.id.mylist);
-        //init data
+        //init data;
         for(int i=0;i<10;i++){
             data.add("item"+i);
         }
