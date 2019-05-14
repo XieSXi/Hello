@@ -2,16 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.edu.swufe.cheng.hello">
 
-    <uses-permission android:name="android.permission.INTERNET"/>//添加访问网络的权限
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    //添加访问网络的权限
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
         <activity android:name=".MainActivity">
 
             <!--
@@ -25,21 +25,40 @@
         -->
         <!-- 注释：ctrl+? -->
         <activity android:name=".SecondActivity">
-                <intent-filter>
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        -->
+        <activity android:name=".ThirdActivity">
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        -->
-        <activity android:name=".ThirdActivity">
-            <!--<intent-filter>
+        <activity android:name=".ConfigActivity" />
+        <activity android:name=".RateListActivity" />
+        <activity android:name=".MyListActivity" >
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
         </activity>
-        <activity android:name=".ConfigActivity"></activity>
+        <activity android:name=".MyList2Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RateCalcActivity" android:theme="@style/Base.Theme.AppCompat.Light.Dialog"></activity>
     </application>
 
 </manifest>

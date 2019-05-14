@@ -15,4 +15,6 @@
     <string name="btn_opencfg_label">Config</string>
     <string name="btn_save_label">Save</string>
     <string name="menu_set_label">Setting</string>
+    <string name="label_oprn_list">OpenList</string>
+    <string name="nodata_label">No Data</string>
 </resources>
