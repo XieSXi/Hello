@@ -178,8 +178,20 @@ public class ThirdActivity extends AppCompatActivity implements Runnable{
         }
         else if(item.getItemId()==R.id.open_list){
             //打开列表窗口
-            Intent list= new Intent(this,MyList2Activity.class);//打开另一个Activity
+            Intent list= new Intent(this,RateListActivity.class);//打开另一个Activity
             startActivity(list);
+            //测试数据库
+//            RateItem item1 =new RateItem("aaa","123");
+//            RateManager manager =new RateManager(this);
+//            manager.add(item1);
+//            manager.add(new RateItem("bbb","23.5"));
+//            Log.i(TAG,"onOptionsItemSelected:写入数据完毕");
+//
+//            //查询所有数据
+//            List<RateItem> testlist =manager.listAll();
+//            for (RateItem i : testlist){
+//                Log.i(TAG,"onOptionsItemSelected:取出数据[id="+i.getId()+"]Name="+i.getCurName()+" Rate="+i.getCurRate());
+//            }
 
         }
         return super.onOptionsItemSelected(item);

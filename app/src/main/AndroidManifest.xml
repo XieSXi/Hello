@@ -43,7 +43,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".ConfigActivity" />
-        <activity android:name=".RateListActivity" />
+        <activity android:name=".RateListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MyListActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
