@@ -102,7 +102,6 @@ public class RateListActivity extends ListActivity implements Runnable {
                     retList.add(str1+"==>"+val);
                     rateList.add(new RateItem(str1,val));
                 }
-
                 //把数据写入数据库中
                 RateManager manager =new RateManager(this);
                 manager.deleteAll();
